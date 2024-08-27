@@ -1,0 +1,388 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, p {
+    margin-bottom: 15px;
+}
+
+/* Hero Section with Bluish Overlay */
+.hero {
+    background-image: url('https://openidc.ca/sites/default/files/inline-images/homepage_hero_illustration.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+    background-color: #2166eb; /* Fallback color */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(33, 102, 235, 0.7); /* Bluish overlay */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* Bring text content above the overlay */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+    margin-top: 20px;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #154ab2;
+}
+
+/* Key Points Section */
+.key-points {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+
+.key-points ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.key-points li {
+    flex: 1 1 45%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.key-points li img {
+    margin-right: 10px;
+}
+
+.key-points li {
+    color: #2166eb;
+}
+
+.key-points li:hover {
+    background-color: #e0ebfa;
+}
+
+/* Registration Form Section */
+.registration-form {
+    background-color: #2166eb;
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, button {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+}
+
+input {
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    background-color: #FFA500;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #012257;
+}
+
+/* Webinar Details Section */
+.webinar-details {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+}
+
+.webinar-details h4 {
+    color: #2166eb;
+}
+
+/* Trust Elements Section */
+/* Client Avatars Section */
+.client-avatars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.client-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the div circular */
+    background-color: #2166eb; /* Background color for avatar */
+    color: #fff; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #fff; /* Optional: Adds a border around the avatar */
+}
+
+
+
+
+.trust-elements {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.trust-elements blockquote {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #2166eb;
+}
+
+.trust-elements h5 {
+    margin-bottom: 20px;
+    color: #2166eb;
+}
+
+.trust-elements img {
+    margin-right: 10px;
+    max-width: 100px;
+}
+
+/* Urgency Section */
+.urgency {
+    background-color: #2166eb;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.circle {
+    background-color: #FFA500;
+    color: white;
+    font-size: 32px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Footer Section */
+footer {
+    background-color: #154ab2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+
+/* Marquee Effect */
+.marquee-container {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden; /* Hide the overflowed content */
+    background-color: #2166eb; /* Same color as the hero section for consistency */
+    padding: 10px 0;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: marquee 15s linear infinite; /* Marquee effect with smooth scrolling */
+}
+
+.marquee span {
+    color: #fff; /* Text color */
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 100%;
+}
+
+/* Keyframes for the Marquee effect */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); /* Start outside the right edge */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left until fully out of view */
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+/* Mobile (sm) */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero h2 {
+        font-size: 1.2em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .key-points ul {
+        flex-direction: column;
+    }
+
+    .key-points li {
+        flex: 1 1 100%;
+    }
+
+    .registration-form form {
+        width: 100%;
+    }
+
+    .countdown {
+        flex-direction: column;
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+/* Medium Screens (md) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .hero h2 {
+        font-size: 1.4em;
+    }
+
+    .key-points ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .key-points li {
+        flex: 1 1 48%;
+    }
+
+    .registration-form form {
+        width: 90%;
+    }
+}
+
+/* Large Screens (lg) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.4em;
+    }
+
+    .key-points li {
+        flex: 1 1 45%;
+    }
+}
+
+/* Extra Large Screens (xl) */
+@media (min-width: 1025px) {
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .key-points li {
+        flex: 1 1 30%;
+    }
+
+    .registration-form form {
+        width: 60%;
+    }
+}
